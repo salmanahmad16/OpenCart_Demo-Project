@@ -38,7 +38,7 @@ describe("Complete end to end test of e-commerce site", function(){
         login.goToLoginPage()       //Nevigate to Login Page
         login.validLogin(this.credentials.email, this.credentials.password)
         home.searchProduct("mac")   // Search Product
-        home.addQuantity(4)     //Add Quantity
+        home.addQuantity(7)     //Add Quantity
         home.addToCart()        // Add to cart
         home.scrollToFeatureSelectProduct("iPhone") // Go back to dashboard and search for another product
         // home.wishlist()     // Added to wishlist
