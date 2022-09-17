@@ -1,0 +1,14 @@
+name: Cypress test2
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: macos-10.15
+    steps: 
+    - name: Checkout
+      uses: actions/checkout@v2.4.2
+    - name: Cypress.io
+      uses: cypress-io/github-action@v4.2.0
+      with:
+        start: npm run start
+      
+      
